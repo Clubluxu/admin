@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Dashboard - Luxu System</title>
+  <link href="https://fonts.googleapis.com/css2?family=Saira&display=swap" rel="stylesheet">
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Saira', sans-serif;
+      margin: 0;
+      background: linear-gradient(to right, #e3f2fd, #ffffff);
+      color: #333;
+    }
+
+    header {
+      background-color: #1e3a8a;
+      color: white;
+      padding: 20px 30px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      flex-wrap: wrap;
+    }
+
+    header img {
+      height: 50px;
+    }
+
+    header h1 {
+      font-size: 1.8rem;
+      margin: 0;
+      flex: 1;
+      text-align: center;
+    }
+
+    .container {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+      gap: 25px;
+      padding: 40px 30px;
+      max-width: 1400px;
+      margin: auto;
+    }
+
+    .card {
+      background: white;
+      padding: 25px;
+      border-radius: 18px;
+      box-shadow: 0 6px 16px rgba(0, 0, 0, 0.1);
+      text-align: center;
+      transition: transform 0.2s, box-shadow 0.2s;
+    }
+
+    .card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
+    }
+
+    .card h3 {
+      margin: 10px 0 5px;
+      font-size: 1.3rem;
+      color: #1e3a8a;
+    }
+
+    .card p {
+      color: #555;
+      margin-bottom: 15px;
+    }
+
+    .card button {
+      background-color: #2563eb;
+      color: white;
+      border: none;
+      padding: 10px 22px;
+      border-radius: 10px;
+      cursor: pointer;
+      font-size: 1rem;
+      transition: background-color 0.2s;
+    }
+
+    .card button:hover {
+      background-color: #1e40af;
+    }
+
+    footer {
+      text-align: center;
+      font-size: 0.9rem;
+      padding: 20px;
+      color: #777;
+      background-color: #f1f5f9;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <img src="luxu-logo.png" alt="Luxu Logo">
+    <h1>🎯 Luxu Admin Dashboard</h1>
+  </header>
+
+  <div class="container">
+    <div class="card">
+      <h3>🎮 Poker Tournament</h3>
+      <p>ระบบจัดการแข่งขันโป๊กเกอร์</p>
+      <button onclick="window.open('https://utd888.github.io/tour/', '_blank')">เข้าใช้งาน</button>
+    </div>
+
+    <div class="card">
+      <h3>📊 Poker Ranking</h3>
+      <p>ดูอันดับผู้เล่นแบบเรียลไทม์</p>
+      <button onclick="window.open('https://utd888.github.io/tour/tour-history.html', '_blank')">Tournament</button>
+      <button onclick="window.open('https://utd888.github.io/livegame/ranking.html', '_blank')">Live Game</button>
+    </div>
+
+    <div class="card">
+      <h3>📝 โบนัส High Hand</h3>
+      <p>จัดการโบนัสไฮท์แฮนด์</p>
+      <button onclick="window.open('https://utd888.github.io/hihand/', '_blank')">เข้าสู่ระบบ</button>
+    </div>
+
+    <div class="card">
+      <h3>🧮 Poker Insurance</h3>
+      <p>คำนวณ OUTs และโอกาสชนะ</p>
+      <button onclick="window.open('https://utd888.github.io/luxu-insurance/', '_blank')">เข้าใช้งาน</button>
+    </div>
+
+    <div class="card">
+      <h3>📝 สมัครแข่งขัน</h3>
+      <p>จัดการการสมัคร Online</p>
+      <button onclick="window.open('https://utd888.github.io/Registration/admin.html', '_blank')">เข้าสู่ระบบ</button>
+      <button onclick="window.open('https://utd888.github.io/Registration/', '_blank')">ดูหน้าสมัคร</button>
+    </div>
+
+    <div class="card">
+      <h3>🧑‍💼 Live Game</h3>
+      <p>จัดการข้อมูล Live game และ บัญชี</p>
+      <button onclick="window.open('https://utd888.github.io/livegame/', '_blank')">เข้าใช้งาน</button>
+    </div>
+  </div>
+
+  <footer>
+    © 2025 Luxu Studio. All rights reserved.
+  </footer>
+
+</body>
+</html>
